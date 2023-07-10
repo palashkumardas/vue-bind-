@@ -1,6 +1,6 @@
 <script setup>
 
-    const number = 17
+    const data = 'Welcome to <strong>vue.js 3</strong> master class.'
 
     function calculateData(n){
       if(n % 2 ==0){
@@ -15,8 +15,7 @@
 
 <template>
       <div>
-        <h1>The number is : {{ number }} / 4 = {{ number/4 }}</h1>
-        <h2>The result is:{{ number %2 ==0 ? "even" :"odd" }}</h2>
+        <h1 v-html="data"></h1>
       </div>
 </template>
 
